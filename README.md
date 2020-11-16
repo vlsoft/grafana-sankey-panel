@@ -11,7 +11,11 @@ The Sankey diagram has been created using the [Google Chart](https://developers.
 ## Info
 In this plugin, the Sankey daigram panel has been used to visualize the distribution between 2 keys. 
 Important - This panel is dependent on the google chart and requires loader.js which needs to be included in the Grafana index.html file
+/usr/share/grafana/public/views 
+
 ```
+
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 ```
 
@@ -24,7 +28,7 @@ The query in the metrics should be grouped by the 2 keywords between which the d
 It is also possible to clone this repo directly into your plugins directory.
 
 Afterwards restart grafana-server and the plugin should be automatically detected and used.
-
+/var/lib/grafana/plugins
 ```
 git clone https://github.com/kumaravel29/sankey-panel.git
 sudo service grafana-server restart
